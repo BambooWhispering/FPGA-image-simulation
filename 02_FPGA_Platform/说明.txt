@@ -1,0 +1,3 @@
+img2txt.m 用于将 图像图片 转换为 ModelSim能处理的文本文件，以作为ModelSim图像处理仿真平台的输入文件。
+RGBtxt2img.m 用于将 ModelSim图像处理仿真平台的RGB888图像输出文本文件 转换为 更直视化的图像（3通道RGB）图片文件。
+graytxt2img.m 用于将 ModelSim图像处理仿真平台的灰度图像输出文本文件 转换为 更直视化的图像（单通道灰度）图片文件。
