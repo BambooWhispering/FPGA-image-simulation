@@ -1,0 +1,14 @@
+dev文件夹：放置工程设置、脚本等
+src文件夹：放置用户代码
+sim文件夹：放置Testbench仿真测试文件
+doc文件夹：放置设计参考、版本、档案等
+core文件夹：放置核
+
+FPGA图像处理仿真平台 ModelSim部分：
+请自行在 /sim/simulation 路径下用ModelSim新建工程，
+并将 /core 、 /src 、/sim/simulation/lib 路径下的.v文件全部添加进工程里。
+然后修改 /src/vedio_platform_tb.v 文件中实例化模块时的参数路径为你自己的路径，
+编译成功后即可 开始仿真 /src/vedio_platform_tb.v 文件。
+其作用是获取 /doc/img_src 路径下的图像文本文件，模拟视频时序输出，
+并得到处理后的图像文本文件（可实现RGB888转灰度，或者灰度输入灰度输出），并存储在 /doc/img_dst 路径下。
+其中，/doc/img_src 路径下的图像文本文件由Matlab获得。
